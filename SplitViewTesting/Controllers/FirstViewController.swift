@@ -23,11 +23,6 @@ class FirstViewController: NSViewController, NSTableViewDelegate {
         }
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
 }
 
 extension FirstViewController: NSTableViewDataSource {
