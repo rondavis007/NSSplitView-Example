@@ -35,6 +35,7 @@ extension FirstViewController: NSTableViewDataSource {
         return sampleData.count
     }
     
+    // This is all you need if you are doing an NSCell version. It will show you the text in the default cell.
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         return sampleData[row]
     }

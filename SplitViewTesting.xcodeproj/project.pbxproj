@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD15CA2320D9321A00A39647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA2220D9321A00A39647 /* AppDelegate.swift */; };
 		DD15CA2520D9321A00A39647 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA2420D9321A00A39647 /* FirstViewController.swift */; };
-		DD15CA2820D9321A00A39647 /* SplitViewTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA2620D9321A00A39647 /* SplitViewTesting.xcdatamodeld */; };
 		DD15CA2A20D9321B00A39647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD15CA2920D9321B00A39647 /* Assets.xcassets */; };
 		DD15CA2D20D9321B00A39647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD15CA2B20D9321B00A39647 /* Main.storyboard */; };
 		DD15CA3720D938DE00A39647 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA3620D938DE00A39647 /* SecondViewController.swift */; };
@@ -21,7 +20,6 @@
 		DD15CA1F20D9321A00A39647 /* SplitViewTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD15CA2220D9321A00A39647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD15CA2420D9321A00A39647 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DD15CA2720D9321A00A39647 /* SplitViewTesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SplitViewTesting.xcdatamodel; sourceTree = "<group>"; };
 		DD15CA2920D9321B00A39647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD15CA2C20D9321B00A39647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD15CA2E20D9321B00A39647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,10 +63,8 @@
 				DD15CA3C20D9463A00A39647 /* Controllers */,
 				DD15CA3520D938AA00A39647 /* View */,
 				DD15CA2920D9321B00A39647 /* Assets.xcassets */,
-				DD15CA2B20D9321B00A39647 /* Main.storyboard */,
 				DD15CA2E20D9321B00A39647 /* Info.plist */,
 				DD15CA2F20D9321B00A39647 /* SplitViewTesting.entitlements */,
-				DD15CA2620D9321A00A39647 /* SplitViewTesting.xcdatamodeld */,
 			);
 			path = SplitViewTesting;
 			sourceTree = "<group>";
@@ -76,6 +72,7 @@
 		DD15CA3520D938AA00A39647 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD15CA2B20D9321B00A39647 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +163,6 @@
 				DD15CA3B20D9450700A39647 /* RSSplitViewController.swift in Sources */,
 				DD15CA3920D93C6A00A39647 /* ThirdViewController.swift in Sources */,
 				DD15CA2320D9321A00A39647 /* AppDelegate.swift in Sources */,
-				DD15CA2820D9321A00A39647 /* SplitViewTesting.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,19 +353,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DD15CA2620D9321A00A39647 /* SplitViewTesting.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD15CA2720D9321A00A39647 /* SplitViewTesting.xcdatamodel */,
-			);
-			currentVersion = DD15CA2720D9321A00A39647 /* SplitViewTesting.xcdatamodel */;
-			path = SplitViewTesting.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DD15CA1720D9321A00A39647 /* Project object */;
 }
