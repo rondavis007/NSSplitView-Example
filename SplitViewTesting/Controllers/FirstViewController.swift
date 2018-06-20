@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FirstViewController: NSViewController, NSTableViewDelegate {
+class FirstViewController: NSViewController  {
 
     @IBOutlet weak var projectTableView: NSTableView!
     @IBOutlet weak var projectNameLabel: NSTextField!
@@ -21,18 +21,29 @@ class FirstViewController: NSViewController, NSTableViewDelegate {
         for x in 1...5 {
             sampleData.append("Value # \(x)")
         }
+        projectTableView.delegate = self
+        projectTableView.reloadData()
     }
 
 }
 
-extension FirstViewController: NSTableViewDataSource {
+let TABLE_VIEW_CELL_ID = "tableCellView"
+
+extension FirstViewController: NSTableViewDataSource, NSTableViewDelegate {
+    
+    //MARK: - Data Source Methods
     func numberOfRows(in tableView: NSTableView) -> Int {
         return sampleData.count
     }
     
-    // This is all you need if you are doing an NSCell version. It will show you the text in the default cell.
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return sampleData[row]
+    //MARK: - Tableview Delegate
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        var returnView: NSTableCellView
+        
+        returnView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(TABLE_VIEW_CELL_ID), owner: self) as! NSTableCellView
+        returnView.textField?.stringValue = sampleData[row]
+        
+        return returnView
     }
 }
 
