@@ -21,8 +21,6 @@ class FirstViewController: NSViewController  {
         for x in 1...5 {
             sampleData.append("Value # \(x)")
         }
-        projectTableView.delegate = self
-        projectTableView.reloadData()
     }
 
 }
