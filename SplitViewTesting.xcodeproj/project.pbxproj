@@ -14,6 +14,7 @@
 		DD15CA3720D938DE00A39647 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA3620D938DE00A39647 /* SecondViewController.swift */; };
 		DD15CA3920D93C6A00A39647 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA3820D93C6A00A39647 /* ThirdViewController.swift */; };
 		DD15CA3B20D9450700A39647 /* RSSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15CA3A20D9450700A39647 /* RSSplitViewController.swift */; };
+		DDF4AE3620DBE562001D09EE /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4AE3520DBE562001D09EE /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DD15CA3620D938DE00A39647 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DD15CA3820D93C6A00A39647 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DD15CA3A20D9450700A39647 /* RSSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSplitViewController.swift; sourceTree = "<group>"; };
+		DDF4AE3520DBE562001D09EE /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				DD15CA2220D9321A00A39647 /* AppDelegate.swift */,
+				DDF4AE3720DBE56A001D09EE /* Model */,
 				DD15CA3C20D9463A00A39647 /* Controllers */,
 				DD15CA3520D938AA00A39647 /* View */,
 				DD15CA2920D9321B00A39647 /* Assets.xcassets */,
@@ -86,6 +89,14 @@
 				DD15CA3A20D9450700A39647 /* RSSplitViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDF4AE3720DBE56A001D09EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4AE3520DBE562001D09EE /* SampleData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD15CA3720D938DE00A39647 /* SecondViewController.swift in Sources */,
+				DDF4AE3620DBE562001D09EE /* SampleData.swift in Sources */,
 				DD15CA2520D9321A00A39647 /* FirstViewController.swift in Sources */,
 				DD15CA3B20D9450700A39647 /* RSSplitViewController.swift in Sources */,
 				DD15CA3920D93C6A00A39647 /* ThirdViewController.swift in Sources */,
